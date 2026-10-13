@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0d">
+  <meta name="description" content="CorrectScore AI. Football predictions for Android.">
+  <meta property="og:title" content="CorrectScore AI">
+  <meta property="og:description" content="Football predictions for Android.">
+  <meta property="og:image" content="https://ronotdr.github.io/correctscore-ai/logo.png">
+  <title>CorrectScore AI</title>
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      min-height: 100%;
+      display: grid;
+      place-items: center;
+      background: #0b0b0d;
+      color: #f5f5f6;
+      font-family: Inter, "Segoe UI", system-ui, sans-serif;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      width: 520px;
+      height: 520px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(224, 22, 36, 0.28), transparent 68%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -58%);
+      pointer-events: none;
+    }
+    main {
+      position: relative;
+      text-align: center;
+      padding: 48px 24px 88px;
+    }
+    img {
+      width: min(260px, 64vw);
+      height: auto;
+      filter: drop-shadow(0 28px 48px rgba(224, 22, 36, 0.35));
+    }
+    h1 {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+    }
+    p {
+      margin: 6px 0 28px;
+      color: #b9b9c1;
+      font-size: 1.05rem;
+      font-weight: 400;
+    }
+    a.store {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #fff;
+      color: #111;
+      text-decoration: none;
+      border-radius: 12px;
+      padding: 10px 18px 10px 14px;
+      min-height: 52px;
+      transition: transform 0.15s ease;
+    }
+    a.store:hover { transform: translateY(-2px); }
+    a.store:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+    .store small {
+      display: block;
+      font-size: 0.68rem;
+      letter-spacing: 0.04em;
+      color: #444;
+      text-transform: uppercase;
+    }
+    .store strong {
+      display: block;
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+    footer {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 18px 20px 22px;
+      text-align: center;
+      color: #6e6e76;
+      font-size: 0.78rem;
+    }
+    footer p { margin: 0; color: inherit; font-size: inherit; }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="logo.png" width="512" height="512" alt="CorrectScore AI">
+    <h1>CorrectScore AI</h1>
+    <p>Football predictions for Android.</p>
+    <a class="store" href="https://play.google.com/store/apps/details?id=com.aicorrectscore.predictions" target="_blank" rel="noopener">
+      <svg width="22" height="24" viewBox="0 0 22 24" aria-hidden="true">
+        <path fill="#34a853" d="M.7 1.2c-.4.4-.7 1.1-.7 1.9v17.8c0 .8.3 1.5.7 1.9l.1.1 10-10v-.2L.8 1.1.7 1.2z"/>
+        <path fill="#fbbc04" d="m14.9 16.1-4.1-4.1v-.2l4.1-4.1.1.1 4.8 2.7c1.4.8 1.4 2.1 0 2.9l-4.8 2.7-.1-.1z"/>
+        <path fill="#ea4335" d="M15 16 10.8 11.9.7 22.8c.5.5 1.2.5 2.1.1L15 16z"/>
+        <path fill="#4285f4" d="m15 8-12.2-6.9C1.9.7 1.2.8.7 1.2L10.8 12 15 8z"/>
+      </svg>
+      <span>
+        <small>Get it on</small>
+        <strong>Google Play</strong>
+      </span>
+    </a>
+  </main>
+  <footer>
+    <p>© 2026 CorrectScore AI · Predictions are for information only.</p>
+  </footer>
+</body>
+</html>
